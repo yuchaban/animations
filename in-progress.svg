@@ -1,0 +1,48 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+      <style>
+        .circle-bg {
+          fill: var(--in-progress-icon-default, #B587FA); /* Fallback to #B587FA */
+        }
+        .dot {
+          fill: var(--in-progress-icon-in-default, #23282E); /* Fallback to #23282E */
+        }
+      </style>
+
+    <!-- Circle bg -->  
+    <circle cx="8" cy="8" r="6.5" class="circle-bg"/>
+    
+    <g>
+      <!-- Dot 1 -->
+      <circle cx="4.5" cy="8" r="1" class="dot" transform-origin="4.5 8">
+        <animateTransform attributeName="transform"
+                          type="scale"
+                          values="1;2;1;1"
+                          keyTimes="0; 0.4; 0.8; 1"
+                          dur="1s"
+                          repeatCount="indefinite"
+                          begin="0s"/>
+      </circle>
+
+      <!-- Dot 2 -->
+      <circle cx="8" cy="8" r="1" class="dot" transform-origin="8 8">
+        <animateTransform attributeName="transform"
+                          type="scale"
+                          values="1;2;1;1" 
+                          keyTimes="0; 0.4; 0.8; 1"
+                          dur="1s"
+                          repeatCount="indefinite"
+                          begin="0.2s"/>
+      </circle>
+
+      <!-- Dot 3 -->
+      <circle cx="11.5" cy="8" r="1" class="dot" transform-origin="11.5 8">
+        <animateTransform attributeName="transform"
+                          type="scale"
+                          values="1;2;1;1" 
+                          keyTimes="0; 0.4; 0.8; 1"
+                          dur="1s"
+                          repeatCount="indefinite"
+                          begin="0.4s"/>
+      </circle>
+    </g>
+  </svg>
